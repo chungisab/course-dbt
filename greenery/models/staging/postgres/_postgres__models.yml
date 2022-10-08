@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_greenery__addresses
+    description: "This view contains address information for both users and orders. Its unique key is address_guid."
+  - name: stg_greenery__events
+    description: "This view contains events-related information and is linked to three tables: users, orders and products. Its unique key is event_guid."
+  - name: stg_greenery__orders_items
+    description: "This view consists of orders line items and is linked to the orders and products tables. Its unique key is order_guid."
+  - name: stg_greenery__orders
+    description: "This view contains details for each order. Its unique key is order_guid."
+  - name: stg_greenery__products
+    description: "This view contains details for each product. Its unique key is product_guid."
+  - name: stg_greenery__promos
+    description: "This view contains details for each promo. Its unique key is promo_guid."
+  - name: stg_greenery__users
+    description: "This contains information for each user. Its unique key is user_guid."
