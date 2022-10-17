@@ -11,7 +11,7 @@ with orders_source as (
 
 select order_id as order_guid
 , user_id as user_guid
-, promo_id
+, promo_id as promo_guid
 , address_id as address_guid
 , created_at as created_at__orders
 , order_cost
